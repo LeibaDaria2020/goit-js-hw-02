@@ -4,7 +4,7 @@ const formatString = function (string) {
     console.log(newString.join(""))
   }
   if (newString.length > 40) {
-    let updaitedString = string.split("").splice(0, 40).join("") + "..."
+    let updaitedString = string.slice(0, 40) + "..."
     console.log(updaitedString)
   }
 }
