@@ -1,12 +1,10 @@
 const formatString = function (string) {
-  let newString = string.split("")
-  if (newString.length <= 40) {
-    console.log(newString.join(""))
-  }
-  if (newString.length > 40) {
-    let updaitedString = string.slice(0, 40) + "..."
-    console.log(updaitedString)
-  }
+  // if (string.length <= 40) {
+  //   return string;
+  // }
+  // return string.slice(0, 40) + "...";
+
+  return string.length > 40 ? string.slice(0, 40) + "..." : string
 }
 
 // const someString = "..."
@@ -20,14 +18,24 @@ const formatString = function (string) {
 //   return string
 // }
 
-formatString("Curabitur ligula sapien, tincidunt non.")
+console.log(formatString("Curabitur ligula sapien, tincidunt non."))
 // вернется оригинальная строка
 
-formatString("Vestibulum facilisis, purus nec pulvinar iaculis.")
+console.log(formatString("Vestibulum facilisis, purus nec pulvinar iaculis."))
 // вернется форматированная строка
 
-formatString("Curabitur ligula sapien.")
+console.log(formatString("Curabitur ligula sapien."))
 // вернется оригинальная строка
 
-formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.")
-// вернется форматированная строка
+console.log(formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique."))
+// formatString("Curabitur ligula sapien, tincidunt non.")
+// // вернется оригинальная строка
+
+// formatString("Vestibulum facilisis, purus nec pulvinar iaculis.")
+// // вернется форматированная строка
+
+// formatString("Curabitur ligula sapien.")
+// // вернется оригинальная строка
+
+// formatString("Nunc sed turpis. Curabitur a felis in nunc fringilla tristique.")
+// // вернется форматированная строка
